@@ -67,7 +67,7 @@ class Customer:
             self.location = shop.location
 
             now = datetime.datetime.now()
-            print(f"Date: {now.strftime("%d/%m/%Y %H:%M:%S")}")
+            print(f"Date: {now.strftime('%d/%m/%Y %H:%M:%S')}")
             print(f"Thanks, {self.name}, for your purchase!")
             print("You have bought:")
 
