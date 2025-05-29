@@ -77,17 +77,17 @@ class Customer:
                 if price is not None:
                     product_cost = price * quantity
                     print(f"{quantity} {product}s for"
-                          f" {format_price(product_cost)} dollars")
+                          f"{format_price(product_cost)} dollars")
                     total_items_cost += product_cost
 
-            print(f"Total cost is {format_price(total_items_cost)} dollars")
+            print(f"Total cost is{format_price(total_items_cost)} dollars")
             print("See you again!\n")
 
             self.location = self.home_location
             total_trip_cost = self.calculate_total_trip_cost(shop, fuel_price)
             self.money -= total_trip_cost
             print(f"{self.name} rides home")
-            print(f"{self.name} now has {format_price(self.money)} dollars\n")
+            print(f"{self.name} now has{format_price(self.money)} dollars\n")
         else:
             print(f"{self.name} doesn't have enough"
                   f" money to make a purchase in any shop.\n")
